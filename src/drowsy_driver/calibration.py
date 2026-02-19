@@ -1,4 +1,3 @@
-﻿from __future__ import annotations
 import time
 
 def start_calibration(state, seconds: int):
@@ -19,5 +18,6 @@ def step_calibration(state, ear_smooth, baseline_alpha: float, default_threshold
             state.baseline_ear = None
             state.ear_threshold = default_threshold
         state.calib_data.clear()
+        state.calib_t0 = None
         return True
     return False

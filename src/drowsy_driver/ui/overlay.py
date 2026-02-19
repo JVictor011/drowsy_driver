@@ -1,4 +1,3 @@
-﻿from __future__ import annotations
 import cv2
 
 def draw_eye_points_and_guides(frame, left_pts, right_pts):
